@@ -32,6 +32,7 @@ export class ChatGPTModel implements BaseModel {
      * @returns 一个Promise，当语音识别完成时解析为包含识别结果的字符串。
      */
     async transcribe(audioBlob: Blob): Promise<string> {
+        console.log('audioBlob', audioBlob)
         // 语音识别 API 实现
         return 'DeepSeek 语音识别结果'
     }

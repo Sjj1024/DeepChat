@@ -30,7 +30,7 @@
 <script setup lang="ts">
 import { reactive, ref } from 'vue'
 import { renderMarkdown } from '@/utils/markdown'
-import { ChatMessage } from '@/types/chat'
+import { ChatMessage } from '@/types'
 import http from '@/utils/tauriHttp'
 
 const messages = ref<ChatMessage[]>([

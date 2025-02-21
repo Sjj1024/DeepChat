@@ -31,7 +31,7 @@
 import { reactive, ref } from 'vue'
 import axios from 'axios'
 import { renderMarkdown } from '@/utils/markdown'
-import { ChatMessage } from '@/types/chat'
+import { ChatMessage } from '@/types'
 
 const messages = ref<ChatMessage[]>([])
 

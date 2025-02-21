@@ -40,6 +40,8 @@ const inputMessage = ref<string>('你好')
 const apiKey = import.meta.env.VITE_DEEPSEEK_KEY
 
 const sendMessage = async () => {
+    console.log('apikey', apiKey)
+
     if (inputMessage.value.trim() === '') return
 
     const userMessage: ChatMessage = {
