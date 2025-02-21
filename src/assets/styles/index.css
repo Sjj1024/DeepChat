@@ -1,0 +1,13 @@
+/* 自定义代码块样式 */
+pre {
+    background-color: #1e1e1e; /* 背景色 */
+    color: #dcdcdc; /* 文字颜色 */
+    padding: 16px; /* 内边距 */
+    border-radius: 8px; /* 圆角 */
+}
+
+/* 样式初始化 */
+* {
+    margin: 0;
+    padding: 0;
+}
