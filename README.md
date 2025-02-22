@@ -1,39 +1,64 @@
-# DeepDance
+<h4 align="right"> 
+<a href="./docs/README.md">English</a> 
+<a href="./docs/README_ZH.md" 
+style="margin: 0 10px;" >简体中文</a> 
+<a href="./docs/README_JP.md">日本语</a>
+</h4>  
+<p align="center">
+    <img src="./docs/deepchat.png" width=138/>
+</p>  
+<h1 align="center">DeepChat</h1>  
+<p align="center">
+<strong>
+DeepSeek, ChatGPT, and other centralized clients can be directly integrated using your API key, supporting voice and video conversation capabilities.
+</strong>
+</p>
 
-DeepSeek And Bytedance volcengine AI Client
+## FAQ
 
-# Features
+1. Mac users may see an “App is damaged” warning on installation. click cancel and Run the following command, then reopen the app:
 
--   DeepSeek 的 AI 模型
--   字节跳动的 AI 模型
--   支持多轮对话
--   支持上下文管理
--   支持 Markdown 格式化输出
--   支持图片生成
--   支持语音识别
--   支持语音合成
--   支持语音识别
--   支持语音对话
--   支持视频对话
-
-# 安装
-
-```bash
-pnpm install
+```sh
+sudo xattr -r -d com.apple.quarantine /Applications/DeepChat.app
 ```
 
-# Prompt
+1. If you encounter any issues while using the program, please download the latest version, as versions developed before 2025 were based on Tauri v1.0. In 2025, Tauri was upgraded to v2.0. If the latest version still has issues, please submit an issue with detailed information so that we can update and resolve it more quickly.
+
+## Developing DeepChat
+
+If you want to develop DeepChat locally, ensure your environment is prepared beforehand. Make sure Rust `>=1.63` and Node `>=16` (e.g., `16.18.1`) are installed on your computer. For installation guidance, please refer to the [Tauri Documentation](https://v2.tauri.app/).
+
+If you’re unfamiliar with these, it’s best to try the one-click packaging tool above.
+
+```sh
+# Install dependencies
+pnpm i
+
+# Local development [Right-click to open debug mode.]
+pnpm run dev
+
+# Package the app
+pnpm run build
+
 
 ```
-我现在要使用vue3和ts开发一个网页端AI对话和语音对话软件，功能需求如下：
-1.在配置页面，支持动态添加deepseek，chatgpt，豆包等自定义大模型的api，可以输入自定义大模型名称和apikey和baseUrl地址。
-2.普通对话页面，在聊天输入框左侧，可以通过一键切换来实现使用不同的大模型对话功能。
-3.使用pinia来存储每个模型的独立配置，每个模型的对话内容也要独立保存到本地，并且可以删除，删除后，对话内容也一并删除。
-4.并且还想实现两个模型直接对话的能力，当选择了聊天对战模式，就需要选择两个要对战的模型， 然后输入一个话题，随机选择一个模型为先手，就可以开始聊天对战了。
-5.还要增加一个能力对比的页面，在能力对比页面实现多模型对话返回的结果对比的能力，当选择了对比模式，只有一个输入框输入内容，就可以同时和三个模型对话，每个模型单独在一个对话记录框展示，在页面上支持添加要对比的模型，最多添加三个。
-6.为每个函数都加上代码注释。
 
-这个软件的架构该怎么设计实现？给出详细的架构设计文档，还有每个文件的详细说明。并给出每个文件的代码。
-```
+<!-- ## Support
 
-# 架构设计
+# 1. wechat and group
+
+# <p align="center" style="display:flex; justify-content: flex-start;" >
+
+# <img src="./docs/mywx.png" width=300/>
+
+# <img src="./docs/wxcode.png" width=300/>
+
+# </p>
+
+# 1. If DeepChat has brought joy to your life, feel free to support it.
+
+# <p align="center" style="display:flex; justify-content: flex-start;">
+
+# <img src="./docs/pay.png" width=620/>
+
+# </p> -->
