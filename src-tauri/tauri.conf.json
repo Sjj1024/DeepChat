@@ -1,7 +1,7 @@
 {
     "$schema": "https://schema.tauri.app/config/2",
-    "productName": "deepchat",
-    "version": "0.1.0",
+    "productName": "DeepChat",
+    "version": "../package.json",
     "identifier": "com.deepchat.app",
     "build": {
         "beforeDevCommand": "pnpm dev",
@@ -12,7 +12,7 @@
     "app": {
         "windows": [
             {
-                "title": "deepchat",
+                "title": "DeepChat",
                 "width": 800,
                 "height": 600,
                 "additionalBrowserArgs": "--disable-web-security"
