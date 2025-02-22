@@ -5,7 +5,7 @@ style="margin: 0 10px;" >简体中文</a>
 <a href="./docs/README_JP.md">日本语</a>
 </h4>  
 <p align="center">
-    <img src="./docs/deepchat.png" width=138/>
+    <img src="./docs/DeepChat.png" width=138/>
 </p>  
 <h1 align="center">DeepChat</h1>  
 <p align="center">
