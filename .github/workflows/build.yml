@@ -70,9 +70,4 @@ jobs:
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
-                  tagName: 'DeepChat-v__VERSION__'
-                  releaseName: 'DeepChat v__VERSION__'
-                  body_path: ./Note.md
-                  releaseDraft: true
-                  prerelease: false
                   args: ${{ matrix.args }}
