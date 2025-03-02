@@ -66,8 +66,14 @@ jobs:
             - name: install frontend dependencies
               run: pnpm install
 
-            - uses: tauri-apps/tauri-action@v0
+            - uses: Sjj1024/tauri-zhaction@tauri-zhaciton
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               with:
+                  tagName: 'DeepChat-v__VERSION__'
+                  releaseName: 'DeepChat v__VERSION__'
+                  body_path: ./Note.md
+                  releaseDraft: true
+                  prerelease: false
                   args: ${{ matrix.args }}
+                  renameArtifacts: 'DeepChat'
