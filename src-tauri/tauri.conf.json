@@ -1,6 +1,6 @@
 {
     "$schema": "https://schema.tauri.app/config/2",
-    "productName": "深 索",
+    "productName": "深&$索",
     "mainBinaryName": "DeepChat",
     "version": "../package.json",
     "identifier": "com.deepchat.app",
